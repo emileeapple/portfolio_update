@@ -1,0 +1,784 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face { font-family: AvenirMedium; src: url('../fonts/AvenirMedium.otf'); }
+@font-face { font-family: Bodoni_Italic; src: url('../fonts/Bodoni_Italic.otf'); }
+@font-face { font-family: AvenirLight; src: url('../fonts/AvenirLight.otf'); }
+
+a{
+    color: #d15463;
+}
+.work-container {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.work {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    padding-left: 8em;
+    position: relative;
+    left: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.work-item {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+}
+
+
+.hello {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+
+.hello>H1 {
+    font-family: 'AvenirMedium',  sans-serif;
+    font-size: 4em;
+    padding-bottom: .5em;
+}
+
+.left img{
+    width: 4em;
+    float: left;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.middle img{
+    float: left;
+    width: 4em;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.right img{
+    float: left;
+    width: 4em;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.left img:hover {
+        filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.middle img:hover {
+        filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.right img:hover {
+        filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+
+.hello>H2 {
+    font-family: 'AvenirMedium',  sans-serif;
+    font-size: 1.8em;
+    color: white;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+H2> a {
+    font-family: 'AvenirMedium',  sans-serif;
+    font-size: 1em;
+    color: white;
+    padding-right: 2em;
+}
+
+
+.hello>p {
+    font-family: 'Bodoni_Italic';
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+
+.work img {
+    height: auto;
+    width: 100%;
+    float: left;
+    background-size: 100%;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.work img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+
+}
+
+
+.sidenav {
+    width: 63em;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    color: white;
+    z-index: 999;
+    left: -55em;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    /*font-size: 64px;*/
+}
+
+.nav-icon {
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 128px;
+    float: right;
+    background: black;
+    color: white;
+    padding-top: 3%;
+}
+
+
+.logo>img {
+    width: 5.4em;
+    display: inline-block;
+    float: right;
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    left: 1.2em;
+}
+
+.content {
+    padding: 20px;
+    background: black;
+}
+
+
+/*WHEN OPEN*/
+
+.open .work {
+
+    left: 24em;
+}
+
+.open .sidenav {
+    left: 0;
+}
+
+
+/* Project page styles */
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-top: 16em;
+}
+
+.videoWrapper object, .videoWrapper embed, .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 3em;
+}
+
+.videoWrapper_lacuna {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-top: 35em;
+}
+
+.videoWrapper_lacuna object, .videoWrapper_lacuna embed, .videoWrapper_lacuna iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 3em;
+}
+
+
+.videoWrapper_2 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-top: 3em;
+}
+
+.videoWrapper_2 object, .videoWrapper_2 embed, .videoWrapper_2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 3em;
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    margin-top: 3.5em;
+    padding-top: 1em;
+    padding-left: 10em;
+}
+
+.project_container img{
+    width: 100%;
+    padding-left: 3em;
+}
+
+.project_container {
+    margin-left: 4em;
+}
+
+.project_container a:hover {
+    color: #999999;
+}
+
+.landfills_img {
+    width: 80%;
+    padding-bottom: 5em;
+    margin: 0 auto;
+}
+
+.skillzilla_img {
+    width: 80%;
+    padding-bottom: 5em;
+    margin: 0 auto;
+}
+
+.landfills_img img {
+    padding-top: 3em;
+}
+
+.back_button {
+    font-size: 4em;
+    font-family: "AvenirMedium", sans-serif;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 2em;
+    left: 14.2em;
+    z-index: 1001;
+}
+
+#head {
+    text-align: center;
+    font-family: "AvenirMedium", sans-serif;
+    padding-top: 40%;
+    padding-bottom: 5%;
+    font-size: 2em;
+    display: block;
+
+}
+
+
+.emperor_concept {
+    background-color: black;
+    color: white;
+}
+
+.project_title {
+    width: 45%;
+    font-family: "Bodoni_Italic";
+    padding-left: 10%;
+    padding-bottom: .3em;
+    position: absolute;
+    font-size: 2em;    
+    border-bottom: 1px;
+    border-style: solid;
+    line-height: 1.5em;
+
+}
+
+.project_info {
+    width: 20%;
+    font-family: "AvenirLight";
+    font-size: 1em;
+    line-height: 1.7em;
+    float: left;
+    padding-left: 50%;
+}
+
+
+.launch {
+    margin-top: 5%;
+    margin-bottom:10em;
+    padding-left: 50%;
+    font-family: "AvenirMedium";
+    letter-spacing: .3em;
+    float: left;
+    line-height: 2em;
+}
+
+.launch>a {
+    color: black;
+}
+
+span {
+    font-size: .8em;
+    line-height: 3em;
+    color: #999999;
+}
+
+.landfills_img p {
+    text-align: center;
+    font-family: "Bodoni_Italic";
+    font-size: 1.5em;
+    border-bottom: 1px solid;
+    padding-bottom: 1em;
+}
+
+
+/* Tablet! */
+@media screen and (min-width:720px) and (max-width:1080px) {
+
+    .sidenav {
+        width: 45em;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        color: white;
+        z-index: 999;
+        left: -37em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        /*font-size: 64px;*/
+    }
+
+    .back_button {
+        font-size: 4em;
+        font-family: "AvenirMedium", sans-serif;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 1.8em;
+        left: 9.8em;
+        z-index: 1001;
+    }
+
+    .hello>p {
+        font-family: 'Bodoni_Italic';
+        font-size: 1.8em;
+        line-height: 1.5em;
+    }
+
+
+}
+
+    .project_title {
+
+        font-family: "Bodoni_Italic";
+        padding-left: 20%;
+        position: relative;
+        font-size: 2em;    
+        border-bottom: 1px;
+        border-style: solid;
+        line-height: 1.5em;
+
+    }
+
+        .project_info {
+        width: 85%;
+        font-family: "AvenirLight";
+        font-size: 1em;
+        line-height: 1.7em;
+        float: left;
+        padding-left: 50%;
+        padding-top: 3em;
+    }
+
+
+/* Mobile! */
+@media screen and (max-width: 719px) {
+
+
+    .sidenav {
+        width: 30em;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        color: white;
+        z-index: 999;
+        left: -22em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        /*font-size: 64px;*/
+    }
+
+    .back_button {
+        font-size: 4em;
+        font-family: "AvenirMedium", sans-serif;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 2em;
+        left: 6em;
+        z-index: 1001;
+    }
+
+    .hello {
+        height: 100%;
+        padding-left: 2.5em;
+    }
+
+    .hello>p {
+        font-family: 'Bodoni_Italic';
+        font-size: 1.6em;
+        line-height: 1.6em;
+    }
+
+    .hello>H2 {
+        font-family: 'AvenirMedium',  sans-serif;
+        font-size: 1.5em;
+        color: white;
+        line-height: 1.2em;
+        text-decoration: none;
+    }
+
+    .hello>H1 {
+        font-family: 'AvenirMedium',  sans-serif;
+        font-size: 3em;
+        padding-bottom: .5em;
+    }
+
+    .left img{
+    width: 3em;
+    float: left;
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+    .middle img{
+        float: left;
+        width: 3em;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .right img{
+        float: left;
+        width: 3em;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .left img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    .middle img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    .right img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+        .project_title {
+        width: 90%;
+        font-family: "Bodoni_Italic";
+        padding-left: 20%;
+        position: relative;
+        font-size: 2em;    
+        border-bottom: 1px;
+        border-style: solid;
+        line-height: 1.5em;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .sidenav {
+        width: 100%;
+        left: 0;
+        max-height: 70px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .open .sidenav {
+        min-height: 100%;
+    }
+    .work {
+        padding-left: 0;
+        padding-top: 4.4em;
+    }
+
+    .open .work {
+        left: 0;
+    }
+
+    div.hello {
+        padding-left: .6em;
+        padding-top: 3em;
+    }
+
+    .hello>H1 {
+        font-family: 'AvenirMedium',  sans-serif;
+        font-size: 2.3em;
+    }
+
+    .left img{
+        width: 3em;
+        padding-top: .5em;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .middle img{
+        width: 3em;
+        padding-top: .5em;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .right img{
+        width: 3em;
+        padding-top: .5em;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .left img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    .middle img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    .right img:hover {
+            filter: none;
+        -webkit-filter: grayscale(0);
+    }
+
+    H2> a {
+    font-family: 'AvenirMedium',  sans-serif;
+    color: white;
+    }
+
+
+    .hello>p {
+        font-family: 'Bodoni_Italic';
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+
+    .hello>H2 {
+        font-family: 'AvenirMedium',  sans-serif;
+        font-size: 1.2em;
+        text-decoration: none;
+        padding-bottom: .3em;
+    }
+
+    .work img {
+        height: auto;
+        width: 100%;
+        float: left;
+        background-size: 100%;
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+
+    .work img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0);
+
+    }
+
+    .nav-icon {
+        font-size: 2em;
+        display: block;
+        height: 100%;
+        float: right;
+        background: black;
+        color: white;
+        padding-right: 1.7em;
+    }
+
+    a.nav-icon {
+        width: 30px;
+    }
+
+    .logo>img {
+       display: none;
+    }
+
+    .project {
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    padding-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    }
+
+    div.project_container {
+        padding-top: 4.4em;
+        padding-bottom: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .project_container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .project_container img{
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    div.project_img {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .project_container a:hover {
+        color: #999999;
+    }
+
+    .landfills_img {
+        width: 80%;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .skillzilla_img {
+        width: 80%;
+        padding-bottom: 0;
+        margin: 0 auto;
+        padding-top: .8em;
+    }
+
+    .landfills_img img {
+        padding-top: 0;
+    }
+
+    .landfills_img {
+        padding-bottom: 0;
+    }
+
+    a.back_button {
+        display: block;
+        font-family: "AvenirMedium", sans-serif; 
+        font-size: 2.8em;   
+        line-height: 1em;
+        top: .3em;
+        left: .5em;
+    }
+
+    #head {
+        text-align: center;
+        font-family: "AvenirMedium", sans-serif;
+        padding-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .emperor_concept {
+        background-color: black;
+        color: white;
+    }
+
+    div.project_title {
+        width: 100%;
+        font-family: "Bodoni_Italic";
+        text-align: center;
+        padding-bottom: .3em;
+        padding-top: 0;
+        font-size: 1.5em;    
+        padding-left: 0;
+    }
+
+    div.project_info {
+        width: 90%;
+        font-family: "AvenirLight";
+        font-size: 1em;
+        line-height: 1.7em;
+        padding-left: 10%;
+    }
+
+    .launch {
+        margin-top: 5%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 10%;
+        font-family: "AvenirMedium";
+        letter-spacing: .3em;
+        width: 100em;
+        line-height: 2em;
+    }
+
+    .launch>a {
+        color: black;
+    }
+
+    span {
+        font-size: .8em;
+        line-height: 3em;
+        color: #999999;
+    }
+
+    .landfills_img p {
+        text-align: center;
+        font-family: "Bodoni_Italic";
+        font-size: .8em;
+        border-bottom: 1px solid;
+        padding-bottom: .8;
+    }
+}
+
+
